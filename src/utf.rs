@@ -89,6 +89,17 @@ where
     dec: VecDeque<T>,
     iter: A,
 }
+impl<T, A> Lookahead<T, A>
+where
+    A: Iterator<Item = T>,
+{
+    pub fn new(a: A) -> Self {
+        Lookahead {
+            dec: VecDeque::new(),
+            iter: a,
+        }
+    }
+}
 
 impl<T, A> Lookahead<T, A>
 where

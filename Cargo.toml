@@ -1,6 +1,6 @@
 [package]
 name = "utf8streamreader"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Provides a lookahead iterator on an utf8 byte stream"
 license-file = "license.txt"
