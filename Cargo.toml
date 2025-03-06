@@ -2,5 +2,8 @@
 name = "utf8streamreader"
 version = "0.1.0"
 edition = "2024"
+description = "Provides a lookahead iterator on an utf8 byte stream"
+license-file = "license.txt"
+readme = "readme.md"
 
 [dependencies]
