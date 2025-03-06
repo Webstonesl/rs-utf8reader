@@ -85,7 +85,6 @@ impl<R: Read> Iterator for Utf8Reader<R> {
 pub struct Lookahead<T, A>
 where
     A: Iterator<Item = T>,
-    T: Copy,
 {
     dec: VecDeque<T>,
     iter: A,
@@ -94,7 +93,6 @@ where
 impl<T, A> Lookahead<T, A>
 where
     A: Iterator<Item = T>,
-    T: Copy,
 {
     pub fn consume(&mut self) -> Option<T> {
         match self.dec.pop_front() {
